@@ -24,7 +24,7 @@
 extern "C" {
 #endif
 
-void haxInit();
+u8 haxInit();
 
 #ifdef __cplusplus
 }
