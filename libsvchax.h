@@ -11,7 +11,7 @@
  * __ctr_svchax will contain 1 on success and 0 on failure
  *
  * svchax_init() will grant full svc access to the main thread,
- * system version 10.6 (kernel version 2.50-11), by using:
+ * up to system version 10.6 (kernel version 2.50-11), by using:
  * - memchunkhax1 for kernel version <= 2.46-0
  * - memchunkhax2 for 2.46-0 < kernel version <= 2.50-11
  *
@@ -24,9 +24,7 @@
 extern "C" {
 #endif
 
-void svchax_init(void);
-
-extern u32 __ctr_svchax;
+void haxInit();
 
 #ifdef __cplusplus
 }
